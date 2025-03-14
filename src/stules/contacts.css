@@ -1,0 +1,76 @@
+html {
+    font-family: "Montserrat", Regular;
+    background-color: #B2DB42;
+}
+
+body {
+    font-size: 20px;
+}
+
+ul, li {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+	width: 1170px;
+	/*позиционирование по центру*/
+	margin: 0 auto; 
+}
+
+.header {
+    padding-top: 67px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.logo {
+    margin-right: 120px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li a{
+    /*ttu+TAB и ещё tdn+TAB*/
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu li {
+    margin-right: 42px;
+    list-style-type: none;
+}
+
+.nav button {
+    width: 248px; /* Ширина кнопки */
+    height: 71px; /* Высота кнопки */
+    border: none;
+    border-radius: 35.5px; /* Закругление углов*/
+    background: linear-gradient(to right, #FF6200, #FF1111);
+    margin-left: auto;
+    box-shadow: 0 4px 15px #ff421369;
+    font-size: 20px;
+    color: #F0FF98;
+    font-weight: 800;
+    cursor: pointer; /* Меняем курсор при наведении */
+    display: flex; /* Включаем Flexbox */
+    justify-content: center; /* Горизонтальное выравнивание */
+    align-items: center; /* Вертикальное выравнивание */
+    gap: 7px; /* Расстояние между текстом и изображением */
+}
+
+button:active {
+    transform: scale(0.95); /* Уменьшение размера */
+}
+
+.nav {
+    /*все элементы в nav на одной горизонали*/
+    display: flex;
+    /*Выравниваем элементы на одной горизонтали*/
+    align-items: center;
+}
