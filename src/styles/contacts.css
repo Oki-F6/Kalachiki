@@ -1,0 +1,116 @@
+html {
+    font-family: "Montserrat", Regular;
+    font-size: 20px;
+    background-color: #F0FF98;
+    
+}
+
+ul, li {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+	width: 1170px;
+	/*позиционирование по центру*/
+	margin: 0 auto; 
+}
+
+.header {
+    margin: -8px -8px 0px -8px;
+    padding-top: 67px;
+    background: linear-gradient(to  left, #8CC231, #B2DB42);
+    height: 130px;
+    width: auto;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.logo {
+    margin-right: 120px;
+}
+
+.menu {
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.menu li {
+    margin-right: 42px;
+    list-style-type: none;
+}
+
+.scroll-button {
+    width: 248px; /* Ширина кнопки */
+    height: 71px; /* Высота кнопки */
+    border: none;
+    border-radius: 35.5px; /* Закругление углов*/
+    background: linear-gradient(to right, #FF6200, #FF1111);
+    margin-left: auto;
+    box-shadow: 0 9px 30px #7d1d0569;
+    font-size: 20px;
+    color: #F0FF98;
+    font-weight: 800;
+    cursor: pointer; /* Меняем курсор при наведении */
+    display: flex; /* Включаем Flexbox */
+    justify-content: center; /* Горизонтальное выравнивание */
+    align-items: center; /* Вертикальное выравнивание */
+    gap: 7px; /* Расстояние между текстом и изображением */
+}
+
+.scroll-button:active {
+    transform: scale(0.95); /* Уменьшение размера */
+}
+
+.nav {
+    /*все элементы в nav на одной горизонали*/
+    display: flex;
+    /*Выравниваем элементы на одной горизонтали*/
+    align-items: center;
+}
+
+.data {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 100px auto 300px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* или 'center' для центрирования */
+}
+
+.title {
+    width: fit-content;
+    height: 37px;
+    background: linear-gradient(to right, #C3DE56, #B2DB41);
+    border-radius: 30px;
+    box-shadow: 0 4px 4px #0000004c;
+    padding: 24px 41px 24px 41px;
+    margin: 10px 0px 40px 0px;
+}
+
+.title h2 {
+    color: #4A7E00;
+    margin: 0px;
+}
+
+.information {
+    margin-left: 30px;
+}
+
+.text {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.text img {
+    margin-right: 11px;
+}
+
+.text p {
+    margin: 0px;
+}

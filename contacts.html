@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friends</title>
-    <link rel="stylesheet" href="./src/stules/contacts.css">
+    <link rel="stylesheet" href="./src/styles/contacts.css">
 </head>
+
 <body>
     <header id="header" class="header">
         <div class="container">
@@ -13,7 +15,7 @@
                 <img src="./src/images/paw_logo.svg" alt="Волчик" class="logo">
                 <ul class="menu">
                     <li>
-                        <a href="glavn.html">
+                        <a href="index.html">
                             Главная
                         </a>
                     </li>
@@ -33,11 +35,119 @@
                         </a>
                     </li>
                 </ul>
-                <button href="friends.html"><img src="./src/images/heart.svg" alt="Heart"></img>Хочу помочь!</button>
+                <a href="#help" class="scroll-button"><img src="./src/images/heart.svg" alt="Heart"></img>Хочу помочь!</a>
+            </div>
+
+            <h2 style="margin: 110px auto 65px auto; font-size: 54px; font-weight: 700;">Контактные данные</h2>
+            <img src="./src/images/map.png" alt="Карта" style="width: 100%;">
+
+            <div class="data">
+                <div class="title">
+                    <h2>Адрес</h2>
+                </div>
+                
+                <div class="information">
+                    <div class="text">
+                        <img src="./src/images/where.svg">
+                        <p>Санкт-Петербург, Улица Дыбенко, 20 к3.</p>
+                    </div>
+    
+                    <div class="text">
+                        <img src="./src/images/where.svg">
+                        <p>Как добраться: пешком от метро "Улица Дыбенко": выйти к ТК "Невский", повернуть налево, идти
+                            вдоль пр. Большевиков около 300 м дома 20 к3 (справа).</p>
+                    </div>
+                </div>
+
+
+                <div class="title">
+                    <h2>Телефоны</h2>
+                </div>
+
+                <div class="information">
+                    <div class="text">
+                        <img src="./src/images/phone-call.svg">
+                        <p>Основной: <a href="tel:+74951234567">+7 (950) 092-92-92</a></p>
+                    </div>
+    
+                    <div class="text">
+                        <img src="./src/images/phone-call.svg">
+                        <p>Экстренный (для волонтёров): <a href="tel:+74951234567">+7 (950) 032-32-32</a></p>
+                    </div>
+                </div>
+
+
+                <div class="title">
+                    <h2>Email</h2>
+                </div>
+
+                <div class="information">
+                    <div class="text">
+                        <img src="./src/images/email.svg">
+                        <p>Общий: shelter@example.com</p>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <h2>График работы</h2>
+                </div>
+
+                <div class="information">
+                    <div class="text">
+                        <img src="./src/images/time.svg">
+                        <p>Ежедневно, 10:00–18:00</p>
+                    </div>
+    
+                    <div class="text">
+                        <img src="./src/images/time.svg">
+                        <p>Приём посетителей: до 17:30</p>
+                    </div>
+                </div>
+                
+
+
+
+
+                <div class="title" style="background: linear-gradient(to right, #FF6200, #FF1111);" id="help">
+                    <h2 style=" color: #F0FF98;">Реквизиты для помощи</h2>
+                </div>
+
+                <div class="information">
+                    <div class="text">
+                        <img src="./src/images/money.svg">
+                        <p>Способы перевода средств:</p>
+                    </div>
+                    
+                    <ol style="margin: 0px 0px 0px 45px;">
+                        <li style="width: 720px;"><span style="font-weight: 700;">Банковский перевод.</span> Через мобильное приложение или онлайн-банк по реквизитам ниже.</li>
+    
+    
+                        <div style="display: flex; margin-bottom: 100px;">
+                            <div style="width: 461px;">
+                                <div style="width: 461px; margin-top: 20px;">
+        
+                                    <h4 style="margin-bottom: 0px;">Реквизиты:</h4>
+                                    <p style="margin-top: 0px;">Банк: ПАО "Сбербанк"
+                                        Номер карты: 2202 2002 2020 1234
+                                        Название организации: 
+                                        Благотворительный фонд "Volchok"</p>
+                                </div>
+                                
+                                <li style="font-weight: 700;">QR-код для быстрого перевода.</li>
+                            </div>
+                            
+                            <a href="https://t.me/Oki_6" target="_blank">
+                                <img src="./src/images/QR.png" style="margin-left: 37px;"> 
+                            </a>
+                        </div>
+                    </ol>
+                </div>
+                
             </div>
         </div>
     </header>
 
-    
+
 </body>
+
 </html>

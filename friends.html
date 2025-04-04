@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friends</title>
-    <link rel="stylesheet" href="./src/stules/friends.css">
+    <link rel="stylesheet" href="./src/styles/friends.css">
 </head>
+
 <body>
     <header id="header" class="header">
         <div class="container">
@@ -13,7 +15,7 @@
                 <img src="./src/images/paw_logo.svg" alt="Волчик" class="logo">
                 <ul class="menu">
                     <li>
-                        <a href="glavn.html">
+                        <a href="index.html">
                             Главная
                         </a>
                     </li>
@@ -33,21 +35,72 @@
                         </a>
                     </li>
                 </ul>
-                <button href="friends.html"><img src="./src/images/heart.svg" alt="Heart"></img>Хочу помочь!</button>
+                <a href="./contacts.html" class="scroll-button"><img src="./src/images/heart.svg" alt="Heart"></img>Хочу помочь!</a>
             </div>
-            <p ID="text">В нашем приюте живут десятки пушистых друзей, которые мечтают о тепле, заботе и доме. 
-                Мы даём им кров, еду и медицинскую помощь, но самое главное — они ждут <span style="font-weight: 800;">вас!</span></p>
-            <img id="slide" src="./src/images/dog.svg" alt="Slide" style="width: 300px; height: 200px;">
-                <p></p>
-                <button onclick="prevSlide()">Назад</button>
-                <button onclick="nextSlide()">
-                    <img src="" alt="">
-                    Вперёд
-                </button>
-                <script src="friends.js"></script>
+
+            <information class="information">
+                <p ID="text">В нашем приюте живут десятки пушистых друзей, которые мечтают о тепле, заботе и доме.
+                    Мы даём им кров, еду и медицинскую помощь, но самое главное — они ждут <span
+                        style="font-weight: 800;">вас!</span></p>
+            </information>
+
+
+
+            <div class="content">
+                <div class="card">
+                    <div class="info">
+                        <div class="history">
+    
+                            <h3>Калачик</h3>
+    
+                            <p>Калачик — это двухлетний рыжий котёнок с яркой рыжей шубкой.</p>
+                            <p>Калачик попал в приют полгода назад. Его нашли в парке, где он прятался под кустом от дождя.
+                                Было видно, что малыш долгое время провёл на улице: он был худенький и немного испуганный.
+                                Но уже через несколько дней в приюте Калачик показал свой настоящий характер — ласковый,
+                                игривый и очень общительный.</p>
+                            <p>Калачик обожает людей и всегда готов подойти познакомиться. Он любит играть с мячиками и
+                                пёрышками. Несмотря на свои два года, он ведёт себя как настоящий кот-ребёнок: бегает,
+                                прыгает и исследует всё вокруг.</p>
+                            <p>
+                                Калачик мечтает найти дом, где его будут любить и заботиться о нём. Если вы ищете весёлого и
+                                преданного компаньона, Калачик — это именно тот, кто вам нужен</p>
+                        </div>
+                        
+                        <div class="facts">
+                            <div class="fact">
+                                <img src="./src/images/active.svg" alt="<3" style="width: 36px;">
+                                <p>Активный</p>
+                            </div>
+                            <div class="fact">
+                                <img src="./src/images/calendar.svg" alt="Возраст" style="width: 36px;">
+                                <p>Возраст: 2 года</p>
+                            </div>
+                            <div class="fact" style="width: 62px;">
+                                <img src="./src/images/men.svg" alt="Мужской пол" style="width: 36px;">
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="photo-frame">
+                        <img id="slide" src="./src/images/kalachik.jpg" alt="Slide" style="width: 268px; height: 268px;">
+                    </div>
+    
+                    <div class="left-right">
+                        <script src="friends.js"></script>
+                        <img src="./src/images/left.svg" alt="Назад" onclick="prevSlide()" style="margin-right: 12px;">
+                        <img src="./src/images/right.svg" alt="Вперед" onclick="nextSlide()">
+                    </div>
+   
+                </div>
+                
+                <img src="./src/images/cats.png" alt="Коты" class="cats">
+            </div>
+            
+
         </div>
     </header>
 
-    
 </body>
+
 </html>

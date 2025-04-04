@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friends</title>
-    <link rel="stylesheet" href="./src/stules/recomm.css">
+    <link rel="stylesheet" href="./src/styles/recomm.css">
 </head>
 <body>
     <header id="header" class="header">
@@ -13,7 +13,7 @@
                 <img src="./src/images/paw_logo.svg" alt="Волчик" class="logo">
                 <ul class="menu">
                     <li>
-                        <a href="glavn.html">
+                        <a href="index.html">
                             Главная
                         </a>
                     </li>
@@ -33,11 +33,132 @@
                         </a>
                     </li>
                 </ul>
-                <button href="friends.html"><img src="./src/images/heart.svg" alt="Heart"></img>Хочу помочь!</button>
+                <a href="./contacts.html" class="scroll-button"><img src="./src/images/heart.svg" alt="Heart"></img>Хочу помочь!</a>
+            </div>
+
+            <h2 class='main-text'>То, что нужно знать прежде, чем взять животное:</h2>
+
+            <div class="all">
+                <div class="card" onclick="this.style.transform=this.style.transform?'':'rotateY(180deg)'">
+
+                    <div class="front">
+                        <p>Что купить?</p>
+                    </div>
+
+                    <div class="back">
+                        <div class='table'>
+                            <table class="tabl">
+                                <thead>
+                                    <tr>
+                                        <th>№</th>
+                                        <th>Коту</th>
+                                        <th>Собаке</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Лоток</td>
+                                        <td>Лежанка / домик</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Наполнитель</td>
+                                        <td>Миски</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Миски</td>
+                                        <td>Корм</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Корм</td>
+                                        <td>Ошейник и поводок</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>
+                                            <perenoska style="display: flex;">
+                                                Переноска 
+                                                <img src="./src/images/perenoska.png" style="height: 60px;">
+                                            </perenoska>
+                                        </td>
+                                        <td>Игрушки (мячи, канаты и др.)</td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <td>7</td>
+                                        <td>
+                                            <table border="1" width="50%" height="80">
+                                                <caption>
+                                                <td colspan="2" style="text-align: center; background-color: #ffdd60; color: rgb(0, 0, 0);">Игрушки</td>
+                                                </caption>
+                            
+                                                <tr>
+                                                <td>Мячики</td>
+                                                <td>Мышки</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>Расчёска / пуходёрка</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    
+                    
+                </div>
+
+
+                <div class="mini">
+
+                    <div class="two" onclick="this.style.transform=this.style.transform?'':'rotateY(180deg)'">
+                        <div class="front-two">
+                            <p>Время и уход</p>
+                        </div>
+                        <div class="back-two">
+                            <dl style="margin: auto 30px;">
+                                <dt>Собаки</dt>
+                                  <dd>Требуют 2-3 выгула в день и внимание</dd>
+                                <dt>Кошки</dt>
+                                  <dd>Самостоятельны, но нуждаются в играх</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <!-- Подключение джава скрипт с помощью обработчика событий -->
+                    <script>
+                        document.querySelectorAll('.two').forEach(two => {
+                            two.addEventListener('click', function() {
+                                this.classList.toggle('front-two');
+                            });
+                        });
+
+                    </script>
+
+                    <div class="three" onclick="this.style.transform=this.style.transform?'':'rotateY(180deg)'">
+                        <div class="front-three">
+                            <p>Первые дни</p>
+                        </div>
+                        <div class="back-three">
+                            <ol style="margin: auto 30px;">
+                                <li>Обеспечение безопасности</li>
+                                <li>Визит к ветеринару</li>
+                                <li>Постепенное знакомство с домом</li>
+                                <li>Режим кормления</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    
     </header>
 
+    
     
 </body>
 </html>

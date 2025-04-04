@@ -1,8 +1,8 @@
 //Массив images содержит пути к изображениям.
 const images = [
-    "./src/images/dog.png",
-    "./src/images/cattt.svg",
-    "./src/images/big_dog.png",
+    "./src/images/kalachik.jpg",
+    "./src/images/kalachik-1.jpg",
+    "./src/images/kalachik-2.jpg",
   ];
   //Переменная currentIndex хранит индекс текущего изображения.
   let currentIndex = 0;
@@ -15,8 +15,7 @@ const images = [
   
   //Функции nextSlide() и prevSlide() переключают изображения вперёд и назад соответственно, , используя новый currentIndex.
   function nextSlide() {
-    currentIndex = (currentIndex + 1) % images.length;
-    //Оператор % (остаток от деления) используется для обеспечения циклического перехода. 
+    currentIndex = (currentIndex + 1) % images.length; //Оператор % (остаток от деления) используется для обеспечения циклического перехода. 
     //Когда currentIndex достигает конца массива, он сбрасывается на 0, чтобы начать с первого изображения снова.
     showSlide(currentIndex);
   }
